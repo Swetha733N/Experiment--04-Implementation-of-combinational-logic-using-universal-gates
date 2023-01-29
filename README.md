@@ -27,8 +27,32 @@ NOR gate is actually a combination of two logic gates: OR gate followed by NOT g
 F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 
 ## Logic Diagram
-## Procedure
+## Procedure:
+
+1. Create a project with required entities.
+2. Create a module along with respective file name.
+3. Run the respective programs for the given boolean equations.
+4. Run the module and get the respective RTL outputs.
+5. Create university program(VWF) for getting timing diagram. 6. Give the respective inputs for timing diagram and obtain the results
 ## Program:
+
+module combo1 (a,b,c,d,f);
+input a,b,c,d;
+output f;
+wire f1, f2, f3;
+assign f * 1 = (~c&~b&~a);
+assign f 2=( sim d\& sim c\& sim a) ;
+assign f 3=(c\& sim( sim b)8 sim a) ;
+assign f= f1&~f2&~f3;
+endmodule
+
+module combo2 (a,b,c,d,f);
+input a,b,c,d;
+output f;
+wire f 1,f2,f3,f4;
+assign f1=c8( sim b) 8a assign f2 = d&(~c)&a;
+assign f3=c8( sim b) 8a ; assign f4 = ~(f1|f2|f3);
+not (f, f4); endmodule
 /*
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
 Developed by:N.Swetha
