@@ -34,7 +34,6 @@ F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 3. Run the respective programs for the given boolean equations.
 4. Run the module and get the respective RTL outputs.
 5. Create university program(VWF) for getting timing diagram. 6. Give the respective inputs for timing diagram and obtain the results
-## Program:
 
 module combo1 (a,b,c,d,f);
 input a,b,c,d;
@@ -53,6 +52,7 @@ wire f 1,f2,f3,f4;
 assign f1=c8( sim b) 8a assign f2 = d&(~c)&a;
 assign f3=c8( sim b) 8a ; assign f4 = ~(f1|f2|f3);
 not (f, f4); endmodule
+## Program:
 /*
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
 Developed by:N.Swetha
